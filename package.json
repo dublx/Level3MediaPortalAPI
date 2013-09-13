@@ -1,14 +1,40 @@
 {
   "name": "Level3MediaPortalAPI",
-  "version": "0.0.0",
-  "description": "Leverage the Level 3 Communications Media Portal API",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Level 3 Communication Media Portal API Node.js Module",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dublx/Level3MediaPortalAPI",
+  "author": {
+    "name": "Luis Faustino (Dublx)",
+    "email": "luis.faustino@gmail.com",
+    "url": "https://github.com/dublx/"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/dublx/Level3MediaPortalAPI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dublx/Level3MediaPortalAPI/issues"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "962a4d1319ae658c6e3b0e8dff981bd02a803d28",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dublx/Level3MediaPortalAPI/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/Level3MediaPortalAPI",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt": "~0.4.1"
   },
   "keywords": [
     "Level",
@@ -16,12 +42,5 @@
     "Media",
     "Portal",
     "API"
-  ],
-  "author": "Luis Faustino",
-  "license": "MIT",
-  "readmeFilename": "README.md",
-  "gitHead": "962a4d1319ae658c6e3b0e8dff981bd02a803d28",
-  "bugs": {
-    "url": "https://github.com/dublx/Level3MediaPortalAPI/issues"
-  }
+  ]
 }
