@@ -1,0 +1,27 @@
+{
+  "name": "Level3MediaPortalAPI",
+  "version": "0.0.0",
+  "description": "Leverage the Level 3 Communications Media Portal API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dublx/Level3MediaPortalAPI.git"
+  },
+  "keywords": [
+    "Level",
+    "3",
+    "Media",
+    "Portal",
+    "API"
+  ],
+  "author": "Luis Faustino",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "962a4d1319ae658c6e3b0e8dff981bd02a803d28",
+  "bugs": {
+    "url": "https://github.com/dublx/Level3MediaPortalAPI/issues"
+  }
+}
