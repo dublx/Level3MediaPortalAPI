@@ -14,6 +14,8 @@ Supported API methods:
 ```javascript
 var api = require('level3mediaportalapi');
 var util = require('util');
+var xml2js = require('xml2js');
+
 
 api.config.key = "YOUR-API-KEY";
 api.config.secret = "YOUR-API-SECRET";
@@ -28,14 +30,35 @@ api.methods.usage.setParameters({
 	dateInterval: 'monthly | daily'
 });
 
-api.request(api.methods.key, requestCallback);
 
-api.request(api.methods.usage, requestCallback);
+api.request(api.methods.key, keyRequestCallback);
+api.request(api.methods.usage, usageRequestCallback);
 
-function requestCallback(err, response) {
+
+function keyRequestCallback(err, response) {
 	if (err) throw err;
-	console.log(response.body);
+	console.log('/key response', response.body);
 };
+function usageRequestCallback(err, response) {
+	if (err) throw err;
+	console.log('/usage response', response.body);
+	getObjectFromXml(response.body, function(err, result){
+		if(err) throw err;
+		console.log('volume=', result.accessGroup.services[0].service[0].summaryData[0].volume);
+	});
+};
+function getObjectFromXml(data, cb) {
+	var parser = new xml2js.Parser();
+	var parseSuccess = true;
+	parser.addListener('error', function(err) {
+		parseSuccess = false;
+		cb(err, null);
+	});
+	parser.addListener('end', function(result) {
+		if (parseSuccess) cb(null, result);
+	});
+	parser.parseString(data);
+}
 ```
 
 ## Contributing
