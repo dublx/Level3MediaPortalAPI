@@ -42,5 +42,10 @@
     "Media",
     "Portal",
     "API"
-  ]
+  ],
+  "dependencies": {
+    "request": "~2.27.0",
+    "underscore": "~1.5.2",
+    "dateformat": "~1.0.6-1.2.3"
+  }
 }
