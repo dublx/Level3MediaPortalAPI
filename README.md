@@ -3,7 +3,7 @@
 Level 3 Communication Media Portal API Node.js Module
 
 ## Getting Started
-Install the module with: `npm install Level3MediaPortalAPI`
+Install the module with: `npm install level3mediaportalapi`
 
 ## Documentation
 Supported API methods:
@@ -12,7 +12,7 @@ Supported API methods:
 
 ## Examples
 ```javascript
-var api = require('Level3MediaPortalAPI');
+var api = require('level3mediaportalapi');
 var util = require('util');
 
 api.config.key = "YOUR-API-KEY";
