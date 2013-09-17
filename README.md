@@ -1,6 +1,9 @@
 # Level3MediaPortalAPI [![Build Status](https://secure.travis-ci.org/dublx/Level3MediaPortalAPI.png?branch=master)](http://travis-ci.org/dublx/Level3MediaPortalAPI)
 
-Level 3 Communication Media Portal API Node.js Module
+This project is not supported by Level (3) Communications. 
+Use at your own risk.
+
+Node.js module to invoke the Level (3) Communications Media Portal API 
 
 ## Getting Started
 Install the module with: `npm install level3mediaportalapi`
@@ -9,6 +12,9 @@ Install the module with: `npm install level3mediaportalapi`
 Supported API methods:
 /key
 /usage
+
+Login to https://mediaportal.level3.com to manage your API keys. 
+See the Help documentation in https://mediaportal.level3.com/ for the official API reference.
 
 ## Examples
 ```javascript
