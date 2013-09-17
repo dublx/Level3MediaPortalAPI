@@ -6,8 +6,30 @@ Level 3 Communication Media Portal API Node.js Module
 Install the module with: `npm install Level3MediaPortalAPI`
 
 ```javascript
-var Level3MediaPortalAPI = require('Level3MediaPortalAPI');
-Level3MediaPortalAPI.awesome(); // "awesome"
+var api = require('Level3MediaPortalAPI');
+var util = require('util');
+
+api.config.key = "YOUR-API-KEY";
+api.config.secret = "YOUR-API-SECRET";
+
+api.methods.usage.setParameters({
+	ag: YOUR-ACCESS-GROUP,
+	scid: "YOUR-SERVICE-IDENTIFIER",
+	ni: null,
+	serviceType: 'caching || streaming || origin',
+	dateFrom: 'yyyyMMddhhmm',
+	dateTo: 'yyyyMMddhhmm',
+	dateInterval: 'monthly | daily'
+});
+
+api.request(api.methods.key, requestCallback);
+
+api.request(api.methods.usage, requestCallback);
+
+function requestCallback(err, response) {
+	if (err) throw err;
+	console.log(response.body);
+};
 ```
 
 ## Documentation
