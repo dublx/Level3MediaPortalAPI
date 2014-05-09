@@ -30,7 +30,7 @@ exports['awesome'] = {
   'no args': function(test) {
     test.expect(1);
     // tests here
-    test.equal(Level3MediaPortalAPI.awesome(), 'awesome', 'should be awesome.');
+    test.equal(Level3MediaPortalAPI.awesome('awesome'), 'awesome', 'should be awesome.');
     test.done();
   },
 };
