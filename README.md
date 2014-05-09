@@ -1,4 +1,4 @@
-# Level3MediaPortalAPI [![Build Status](https://secure.travis-ci.org/dublx/Level3MediaPortalAPI.png?branch=master)](http://travis-ci.org/dublx/Level3MediaPortalAPI)
+# Level3MediaPortalAPI [![Build Status](https://www.codeship.io/projects/e2ff1030-b989-0131-6d93-5a9852908a01/status)]
 
 This project is not supported by Level (3) Communications. 
 Use at your own risk.
