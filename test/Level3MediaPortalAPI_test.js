@@ -1,6 +1,6 @@
 'use strict';
 
-var Level3MediaPortalAPI = require('../lib/Level3MediaPortalAPI.js');
+var api = require('../lib/Level3MediaPortalAPI.js');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -30,7 +30,7 @@ exports['awesome'] = {
   'no args': function(test) {
     test.expect(1);
     // tests here
-    test.equal(Level3MediaPortalAPI.awesome('awesome'), 'awesome', 'should be awesome.');
+    test.equal(api.config.key, '', 'should be empty.');
     test.done();
   },
 };
